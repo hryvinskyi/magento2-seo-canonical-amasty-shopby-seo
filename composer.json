@@ -1,0 +1,29 @@
+{
+  "name": "hryvinskyi/module-seo-canonical-amasty-shopby-seo",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "amasty/shopby-seo": "*",
+    "hryvinskyi/magento2-seo-canonical-api": "*",
+    "hryvinskyi/magento2-seo-canonical-frontend": "*"
+  },
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    {
+      "name": "Volodymyr Hryvinskyi",
+      "email": "volodymyr@hryvinskyi.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Hryvinskyi\\SeoCanonicalAmastyShopbySeo\\": ""
+    }
+  }
+}

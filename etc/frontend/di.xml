@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2025. MageCloud.  All rights reserved.
+ * @author: Volodymyr Hryvinskyi <mailto:volodymyr@hryvinskyi.com>
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Hryvinskyi\SeoCanonicalFrontend\Model\CanonicalUrlProcessor">
+        <arguments>
+            <argument name="items" xsi:type="array">
+                <item name="amsty_shop_by_seo" xsi:type="array">
+                    <item name="object" xsi:type="object">Hryvinskyi\SeoCanonicalAmastyShopbySeo\Model\CanonicalUrlProcess</item>
+                    <item name="sortOrder" xsi:type="number">201</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Hryvinskyi\SeoCanonicalAmastyShopbySeo\Model\CanonicalUrlProcess">
+        <arguments>
+            <argument name="actions" xsi:type="array">
+                <item name="catalog_category_view" xsi:type="string">catalog_category_view</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Page\Config">
+        <plugin name="Amasty_ShopbySeo::change_meta_data" disabled="true" />
+    </type>
+</config>
