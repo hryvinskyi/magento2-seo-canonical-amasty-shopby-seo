@@ -18,7 +18,7 @@ This module provides integration between Amasty ShopbySeo module and Hryvinskyi'
 ## Installation
 ### Composer (recommended)
 ```bash
-composer require hryvinskyi/module-seo-canonical-amasty-shopby-seo
+composer require hryvinskyi/magento2-seo-canonical-amasty-shopby-seo
 bin/magento module:enable Hryvinskyi_SeoCanonicalAmastyShopbySeo
 bin/magento setup:upgrade
 ```
